@@ -8,7 +8,8 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://udonuopn.github.io',
+  site: 'https://udonuopn.github.io/',
+  base: 'udon-blog'
   integrations: [
     tailwind({
       config: {
