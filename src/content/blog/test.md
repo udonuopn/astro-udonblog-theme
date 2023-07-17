@@ -3,7 +3,7 @@ author: udon
 pubDatetime: 2023-07-17T15:22:00Z
 title: テスト
 postSlug: test
-featured: true
+featured: false
 draft: false
 tags:
   - test
