@@ -19,6 +19,7 @@ export default defineConfig({
     sitemap(),
   ],
   markdown: {
+    drafts: true,
     remarkPlugins: [
       remarkToc,
       [
