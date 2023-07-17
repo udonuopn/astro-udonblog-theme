@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://blog.udonuopn.net/",
   author: "Udon",
   desc: "Udonのブログ",
-  title: "udon nqou",
+  title: "udonuopn",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 20,
