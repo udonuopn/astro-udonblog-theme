@@ -1,12 +1,11 @@
 ---
 author: udon
-pubDatetime: 2022-09-23T15:22:00Z
+pubDatetime: 2023-07-17T15:22:00Z
 title: テスト
 featured: true
 draft: false
 tags:
   - test
-  - gohan
 ogImage: ""
 description:
   これは適当な説明です。
