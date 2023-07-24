@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "udonuopn",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 20,
+  postPerPage: 5,
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
@@ -124,9 +124,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Steam",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://steamcommunity.com/id/udonaster",
     linkTitle: `${SITE.title} on Steam`,
-    active: false,
+    active: true,
   },
   {
     name: "Telegram",
