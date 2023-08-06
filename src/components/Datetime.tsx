@@ -46,7 +46,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const month = MONTHS[myDatetime.getMonth()]
   return (
-    <div className="w-[74px] font-poppins flex flex-col w-full text-center min-w-full border-r-[6px] border-[#ab1717] mr-6">
+    <div className="w-[80px] font-poppins flex flex-col w-full text-center min-w-full border-r-[6px] border-[#ab1717] mr-6">
       <span className="text-4xl font-semibold">{day}</span>
       <span className="text-base">{month} {year}</span>
     </div>
