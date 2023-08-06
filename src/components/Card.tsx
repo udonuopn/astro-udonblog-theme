@@ -10,7 +10,7 @@ export interface Props {
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description } = frontmatter;
   return (
-    <li className="flex items-end gap-6 my-6 border-l-[6px] border-[#ab1717] pl-2">
+    <li className="flex items-end gap-6 my-6">
       <Datetime datetime={pubDatetime} />
       <div className="flex-col my-1">
         <a
