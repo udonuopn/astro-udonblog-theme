@@ -23,7 +23,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
   <Header />
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+  <div class="mx-auto font-poppins flex w-full max-w-3xl justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="history.back()"
@@ -36,15 +36,17 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
     </button>
   </div>
   <main id="main-content">
-    <h1 class="post-title">{title}</h1>
-    <Datetime datetime={pubDatetime} size="lg" className="my-2" />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
-    </article>
-
+    <div class="flex items-end my-2 gap-6">
+      <Datetime datetime={pubDatetime} size="lg" className="text-right" />
+      <h1 class="post-title">{title}</h1>
+    </div>
     <ul class="tags-container">
       {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
     </ul>
+    <article id="article" role="article" class="prose myprose mx-auto font-noto mt-8 max-w-3xl">
+      <Content />
+    </article>
+
   </main>
   <Footer />
 </Layout>
@@ -54,9 +56,9 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
     @apply mx-auto w-full max-w-3xl px-4 pb-12;
   }
   .post-title {
-    @apply text-2xl font-semibold text-skin-accent;
+    @apply text-2xl font-semibold text-skin-base my-1;
   }
   .tags-container {
     @apply my-8;
-  }
+  } 
 </style>

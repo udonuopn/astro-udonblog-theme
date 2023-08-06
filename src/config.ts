@@ -2,15 +2,15 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://blog.udonuopn.net/",
-  author: "Udon Asakawa",
-  desc: "Udonのブログ",
-  title: "udonuopn",
+  author: "Udon.A",
+  desc: "Udon.A's Blog",
+  title: "udon and ...",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = ["ja-JP"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: false,

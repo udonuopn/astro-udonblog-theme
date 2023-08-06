@@ -4,21 +4,35 @@
 
 @layer base {
   :root,
+  /*
+    green: 49, 176, 185
+    pink: 206, 70, 163
+  */
+  /*
   html[data-theme="light"] {
-    --color-fill: 235, 235, 235;
-    --color-text-base: 61, 61, 61;
-    --color-accent: 49, 176, 185;
-    --color-card: 206, 70, 163;
+    --color-fill: 255, 255, 255;
+    --color-text-base: 91, 6, 6;
+    --color-accent: 186, 54, 54;
+    --color-card: 113, 105, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 206, 70, 163;
+    --color-border: 113, 105, 96;
+  }
+  */
+  html[data-theme="light"] {
+    --color-fill: 255, 255, 255;
+    --color-text-base: 41, 41, 41;
+    --color-accent: 171, 23, 23;
+    --color-card: 171, 23, 23;
+    --color-card-muted: 138, 51, 2;
+    --color-border: 41, 41, 41;
   }
   html[data-theme="dark"] {
-    --color-fill: 61, 61, 61;
-    --color-text-base: 235, 235, 235;
-    --color-accent: 49, 176, 185;
-    --color-card: 206, 70, 163;
+    --color-fill: 35, 21, 21;
+    --color-text-base: 234, 225, 215;
+    --color-accent: 255, 180, 51;
+    --color-card: 189, 153, 91;
     --color-card-muted: 138, 51, 2;
-    --color-border: 206, 70, 163;
+    --color-border: 189, 153, 91;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -114,6 +128,7 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-skin-card-muted;
   }
+
 }
 
 @layer components {
@@ -122,5 +137,8 @@
   }
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
+  }
+  h3 {
+    @apply not-italic
   }
 }

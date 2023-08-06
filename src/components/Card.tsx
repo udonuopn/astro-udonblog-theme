@@ -10,23 +10,27 @@ export interface Props {
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description } = frontmatter;
   return (
-    <li className="my-6">
-      <a
-        href={href}
-        className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-      >
-        {secHeading ? (
-          <h2 className="text-lg font-medium decoration-dashed hover:underline">
-            {title}
-          </h2>
-        ) : (
-          <h3 className="text-lg font-medium decoration-dashed hover:underline">
-            {title}
-          </h3>
-        )}
-      </a>
+    <li className="flex items-end gap-6 my-6 border-l-[6px] border-[#ab1717] pl-2">
       <Datetime datetime={pubDatetime} />
-      <p>{description}</p>
+      <div className="flex-col my-1">
+        <a
+          href={href}
+          className="text-lg font-noto hover:text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+        >
+          {secHeading ? (
+            <h2 className="text-lg font-noto font-semibold decoration-dashed">
+              {title}
+            </h2>
+          ) : (
+            <h3 className="text-lg font-noto font-semibold decoration-dashed">
+              {title}
+            </h3>
+          )}
+        </a>
+        <p className="text-sm font-noto opacity-70">
+          {description}
+        </p>
+      </div>
     </li>
   );
 }
