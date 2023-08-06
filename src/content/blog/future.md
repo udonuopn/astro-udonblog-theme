@@ -14,3 +14,4 @@ description:
 - コンテンツ配信基盤をGitHub Pagesからほかへ移設
   - とりあえずCloudflare Pagesを検討中
 - ちゃんとしたトップページを作る
+- 背景にページ番号とかタイトルとかを入れてみる
