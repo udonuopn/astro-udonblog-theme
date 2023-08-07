@@ -8,9 +8,9 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, description } = frontmatter;
+  const { title, pubDatetime } = frontmatter;
   return (
-    <li className="flex items-end gap-6 my-6">
+    <li className="flex items-center gap-6 my-6">
       <Datetime datetime={pubDatetime} />
       <div className="flex-col my-1">
         <a
@@ -27,9 +27,6 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
             </h3>
           )}
         </a>
-        <p className="text-sm font-noto opacity-70">
-          {description}
-        </p>
       </div>
     </li>
   );
