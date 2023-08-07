@@ -43,12 +43,10 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   */
   const day = myDatetime.getDate().toString().padStart(2, "0")
   const year = myDatetime.getFullYear()
-  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-  const month = MONTHS[myDatetime.getMonth()]
+  const month = myDatetime.getMonth().toString().padStart(2, "0")
   return (
-    <div className="w-[80px] font-poppins flex flex-col text-center min-w-full border-r-[6px] border-[#ab1717] mr-6">
-      <span className="text-4xl font-semibold">{day}</span>
-      <span className="text-base">{month} {year}</span>
+    <div className="flex-col font-noto sm:min-w-full">
+      <span className="text-base">{year}-{month}-{day}</span>
     </div>
   );
 };

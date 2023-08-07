@@ -10,9 +10,9 @@ export interface Props {
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime } = frontmatter;
   return (
-    <li className="flex items-center gap-6 my-6">
+    <li className="sm:flex sm:items-center my-6">
       <Datetime datetime={pubDatetime} />
-      <div className="flex-col my-1">
+      <div className="sm:flex-col border-l-4 border-skin-accent sm:ml-4 my-2 pl-4">
         <a
           href={href}
           className="text-lg font-noto hover:text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
