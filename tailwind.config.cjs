@@ -86,6 +86,9 @@ module.exports = {
             h3: {
               fontStyle: 'normal',
             },
+            'code': {
+              backgroundColor: '#eee',
+            },
           },
         },
       }),
