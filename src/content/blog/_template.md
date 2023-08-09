@@ -7,7 +7,5 @@ draft: true
 tags:
   - othres
 ogImage: ""
-description:
-  Description
 ---
 
