@@ -73,15 +73,13 @@ module.exports = {
             h1: {
               //color: '#ffffff !important',
               borderLeft: 'solid 10px #ab1717',
-              padding: '0.5em',
-              lineHeight: '0.7'
+              paddingLeft: '0.5em',
+              lineHeight: '1.5',
             },
             h2: {
-              borderLeftWidth: '4px',
-              borderLeftStyle: 'solid', 
-              borderColor: '#ab1717',
-              padding: '0.5em',
-              lineHeight: '0.7'
+              borderLeft: 'solid 4px #ab1717',
+              paddingLeft: '0.5em',
+              lineHeight: '1.5',
             },
             h3: {
               fontStyle: 'normal',
