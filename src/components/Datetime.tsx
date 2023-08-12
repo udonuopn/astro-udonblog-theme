@@ -43,7 +43,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   */
   const day = myDatetime.getDate().toString().padStart(2, "0")
   const year = myDatetime.getFullYear()
-  const month = myDatetime.getMonth().toString().padStart(2, "0")
+  const month = (myDatetime.getMonth() + 1).toString().padStart(2, "0")
   return (
     <div className="flex-col font-noto">
       <span className="text-base">{year}-{month}-{day}</span>
