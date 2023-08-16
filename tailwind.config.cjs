@@ -72,7 +72,10 @@ module.exports = {
           css: {
             h1: {
               //color: '#ffffff !important',
-              borderLeft: 'solid 10px #ab1717',
+              border: '2px',
+              borderLeft: '15px',
+              borderStyle: 'solid',
+              borderColor: '#ab1717',
               paddingLeft: '0.5em',
               lineHeight: '1.5',
               marginTop: '2.5em',
